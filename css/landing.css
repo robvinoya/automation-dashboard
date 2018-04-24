@@ -1,0 +1,83 @@
+body {
+    margin: auto;
+}
+@font-face {
+    font-family: TelstraFont;
+    src: url("../fonts/TelstraGravur-Regular.otf");
+}
+#landing_background {
+    background-image: url("../img/alleyway_low_res.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+#landing_menu {
+    font-family: "TelstraFont";
+    width: 30%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(0,1,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type=button] {
+    font-family: "TelstraFont";
+    letter-spacing: 2px;
+    background-color: #35237F;
+    border: none;
+    color: white;
+    margin: 4px 2px;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: #8A92C5;
+    -webkit-transition: border-radius 2s;
+}
+h1 {
+    font-family: "TelstraFont";
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+}
+h2 {
+    font-family: "TelstraFont";
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#landing_details {
+    font-family: "TelstraFont";
+    width: 40%;
+    height: 80%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    -moz-animation: fadeIn ease-in 1s;
+    -webkit-animation: fadeIn ease-in 1s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
