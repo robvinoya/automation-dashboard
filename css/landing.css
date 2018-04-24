@@ -1,5 +1,6 @@
 body {
     margin: auto;
+    font-family: TelstraFont;
 }
 @font-face {
     font-family: TelstraFont;
@@ -14,7 +15,6 @@ body {
     height: 100vh;
 }
 #landing_menu {
-    font-family: "TelstraFont";
     width: 30%;
     height: 50%;
     overflow: auto;
@@ -27,7 +27,6 @@ body {
     justify-content: center;
 }
 input[type=button] {
-    font-family: "TelstraFont";
     letter-spacing: 2px;
     background-color: #35237F;
     border: none;
@@ -42,32 +41,28 @@ input[type=button]:hover {
     -webkit-transition: border-radius 2s;
 }
 h1 {
-    font-family: "TelstraFont";
     color: white;
     letter-spacing: 3px;
     text-align: center;
 }
 h2 {
-    font-family: "TelstraFont";
     color: white;
     letter-spacing: 3px;
     text-align: center;
 }
 #landing_details {
-    font-family: "TelstraFont";
-    width: 40%;
-    height: 80%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 15%;
     overflow: auto;
     margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    text-align: center;
     -moz-animation: fadeIn ease-in 1s;
     -webkit-animation: fadeIn ease-in 1s;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}

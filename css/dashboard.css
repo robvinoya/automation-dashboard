@@ -1,24 +1,24 @@
 body {
     margin: auto;
+    font-family: TelstraFont;
 }
 @font-face {
     font-family: TelstraFont;
     src: url("../fonts/TelstraGravur-Regular.otf");
 }
-#side_panel {
-    font-family: "TelstraFont";
-    width: 10%;
-    height: 100%;
-    overflow: auto;
+#header {
+    width: 100%;
+    height: 7.5%;
     margin: auto;
-    position: absolute;
-    background-color: #414141;
+    background: linear-gradient(to right, #35237F , #DCDEEE);
+    /*background: black;*/
+    position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #footer {
-    font-family: "TelstraFont";
     width: 100%;
     height: 10%;
     overflow: auto;
@@ -32,18 +32,18 @@ body {
     opacity: 1;
 }
 #content_panel {
-    font-family: "TelstraFont";
-    width: 90%;
+    width: 100%;
     height: 90%;
     overflow: auto;
-    left: 10%;
-    position: absolute;
-    background-image: url("../img/telstra_uber.jpg");
+    margin: auto;
+    background-image: url("../img/telstra_business.jpg");
     background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 #content_top {
     border-radius: 25px;
-    font-family: "TelstraFont";
     width: 98%;
     height: 50%;
     overflow: auto;
@@ -53,20 +53,19 @@ body {
     position: absolute;
     overflow: auto;
     margin: auto;
-    background-color: rgba(0,1,0,0.2);
+    background-color: rgba(0,1,0,0.4);
     display: flex;
     justify-content: center;
 }
 #content_bottom_left {
     border-radius: 25px;
     width: 48.5%;
-    height: 45%;
-    font-family: "TelstraFont";
+    height: 41%;
     position: absolute;
     overflow: auto;
     margin: auto;
-    background-color: rgba(0,1,0,0.2);
-    bottom: 2%;
+    background-color: rgba(0,1,0,0.4);
+    bottom: 6%;
     left: 1%;
     display: flex;
     justify-content: center;
@@ -74,29 +73,34 @@ body {
 #content_bottom_right {
     border-radius: 25px;
     width: 48.5%;
-    height: 45%;
-    font-family: "TelstraFont";
+    height: 41%;
     position: absolute;
     overflow: auto;
     margin: auto;
-    background-color: rgba(0,1,0,0.2);
-    bottom: 2%;
+    background-color: rgba(0,1,0,0.4);
+    bottom: 6%;
     right: 1%;
     display: flex;
     justify-content: center;
 }
 #footer_details {
-    font-family: "TelstraFont";
     color: #414141;
     font-weight: bold;
-    letter-spacing: 1.0px;
+    letter-spacing: 0.5px;
+    position: relative;
     text-align: center;
+    white-space: pre-line;
 }
 .content_heading {
-    background-color: #570066;
     opacity: .5%;
-    font-family: TelstraFont;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+h3 {
+    color: white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
