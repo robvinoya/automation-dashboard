@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/Chart.bundle.min.js"></script>
 </head>
 <body>
     <div id="header">
         <h3>HOLISTIC VIEW</h3>
     </div>
     <div id="content_panel">
-        <div id="content_top">
-            <h4 class="content_heading">Historical Data</h4>
-        </div>
+        <!--<div id="content_top">-->
+            <!--<div id="content_top_heading">-->
+                <!--<h4 class="content_heading">Historical Data</h4>-->
+            <!--</div>-->
+            <div id="content_top_canvas" style="position: relative; height:60vh; width:90vw;" >
+                <canvas id="myChart"></canvas>
+                <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            responsive:true,
+                            maintainAspectRatio: false,
+                            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                            datasets: [{
+                                label: 'success',
+                                data: [15, 18, 20, 17, 14, 2, 13, 15, 18, 20, 17, 14, 2, 13],
+                                backgroundColor: "rgba(57,255,24,0.3)"
+                            }, {
+                                label: 'failures',
+                                data: [2, 12, 5, 5, 2, 23, 8, 2, 12, 5, 5, 2, 23, 8],
+                                backgroundColor: "rgba(230,93,108,0.3)"
+                            }]
+                        },
+                        options: {
+                            // responsive: true,
+                            // maintainAspectRatio: true
+
+                        }
+                    });
+                </script>
+            </div>
+        <!--</div>-->
         <div id="content_bottom_left">
             <h4 class="content_heading">Metrics</h4>
         </div>

@@ -27,7 +27,7 @@ body {
     bottom: 0;
     background-color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     opacity: 1;
 }
@@ -36,7 +36,7 @@ body {
     height: 90%;
     overflow: auto;
     margin: auto;
-    background-image: url("../img/telstra_business.jpg");
+    /*background-image: url("../img/telstra_business.jpg");*/
     background-size: cover;
     position: absolute;
     top: 0;
@@ -44,24 +44,36 @@ body {
 }
 #content_top {
     border-radius: 25px;
-    width: 98%;
-    height: 50%;
+    width: 100vw;
+    height: 60vh;
     overflow: auto;
     top: 2%;
     left: 1%;
     right: 1%;
-    position: absolute;
-    overflow: auto;
-    margin: auto;
-    background-color: rgba(0,1,0,0.4);
+    /*position: absolute;*/
+    /*overflow: auto;*/
+    /*margin: auto;*/
+    /*background-color: rgba(0,1,0,0.4);*/
+    /*background: #E6E6E6;*/
+}
+#content_top_heading {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#content_top_canvas {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+#myChart{
+    opacity: 0.5%;
 }
 #content_bottom_left {
     border-radius: 25px;
     width: 48.5%;
-    height: 41%;
-    position: absolute;
+    /*height: 35%;*/
+    /*position: absolute;*/
     overflow: auto;
     margin: auto;
     background-color: rgba(0,1,0,0.4);
@@ -73,8 +85,8 @@ body {
 #content_bottom_right {
     border-radius: 25px;
     width: 48.5%;
-    height: 41%;
-    position: absolute;
+    /*height: 35%;*/
+    /*position:absolute;*/
     overflow: auto;
     margin: auto;
     background-color: rgba(0,1,0,0.4);
